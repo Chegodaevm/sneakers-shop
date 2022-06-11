@@ -127,7 +127,7 @@ function App() {
 
         <Header onClickCart={() => setCartOpened(true)} />
 
-        <Route path="/" exact>
+        <Route path="/sneakers-shop" exact>
           <Home
             items={items}
             cartItems={cartItems}
@@ -140,13 +140,11 @@ function App() {
           />
         </Route>
 
-        <Route path="/favorites" exact>
-          <Favorites
-            onAddToFavorite={onAddToFavorite}
-          />
+        <Route path="/sneakers-shop/favorites" exact>
+          <Favorites />
         </Route>
 
-        <Route path="/orders">
+        <Route path="/sneakers-shop/orders" exact>
           <Orders />
         </Route>
 
